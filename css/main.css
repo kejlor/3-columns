@@ -110,7 +110,6 @@ button:hover {
 
 .split {
   display: flex;
-  flex-direction: column;
   padding: 0em 2em 2em 2em;
 }
 
@@ -126,4 +125,18 @@ button:hover {
 .bg-very-dark-cyan {
   background-color: var(--clr-primary-900);
   border-radius: 0 0 0.5em 0.5em;
+}
+
+@media (max-width: 375px) {
+  .split {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 375px) {
+  .split {
+    flex-wrap: wrap;
+    width: 95%;
+    margin: 0 auto 0 auto;
+  }
 }
