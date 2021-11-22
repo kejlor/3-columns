@@ -9,6 +9,7 @@
   --clr-neutral-300: hsl(0, 0%, 95%);
 
   --ff-primary: "Big Shoulders Display", cursive;
+  /* buttons and p*/
   --ff-accent: "Lexend Deca", sans-serif;
 }
 *,
@@ -19,6 +20,15 @@
 
 body {
   font-size: 15px;
+  font-family: var(--ff-primary);
+}
+
+p {
+  font-family: var(--ff-accent);
+}
+
+button {
+  font-family: var(--ff-accent);
 }
 
 .attribution {
