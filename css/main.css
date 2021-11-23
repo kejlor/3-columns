@@ -57,6 +57,7 @@ p {
 }
 
 .attribution {
+  margin: auto;
   font-size: 11px;
   text-align: center;
   margin-top: 4em;
@@ -113,6 +114,10 @@ button:hover {
   padding: 0em 2em 2em 2em;
 }
 
+/* ===============
+=== BACKGROUND ===
+=============== */
+
 .bg-orange {
   background-color: var(--clr-primary-200);
   border-radius: 0.5em 0.5em 0 0;
@@ -134,9 +139,22 @@ button:hover {
 }
 
 @media (min-width: 375px) {
+  .web-split {
+    display: flex;
+    margin: auto;
+    max-width: 60em;
+  }
   .split {
-    flex-wrap: wrap;
-    width: 95%;
-    margin: 0 auto 0 auto;
+    flex-direction: column;
+  }
+  p {
+    padding-bottom: 8em;
+  }
+  .bg-orange {
+    border-radius: 0.5em 0 0 0.5em;
+  }
+
+  .bg-very-dark-cyan {
+    border-radius: 0 0.5em 0.5em 0;
   }
 }
